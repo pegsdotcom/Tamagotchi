@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tamagotchi</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Tamagotchi Game</title>
 </head>
 <body>
-    <h1>Tamagotchi</h1>
+    <h1>Tamagotchi Game</h1>
+    <input type="text" id="petName" placeholder="Pet Name">
+    <label for="pet-type">Choose a pet:</label>
+    <select id="pet-type">
+    <option value="Dog">Dog</option>
+    <option value="Cat">Cat</option>
+    <option value="Rabbit">Rabbit</option>
+    <option value="Bird">Bird</option>
+</select>
+
+    
+    <button onclick="addPet()">Adopt Pet</button>
+    <div id="pets"></div>
+    <div id="history"></div>
+
 </body>
 </html>
